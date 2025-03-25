@@ -1,5 +1,6 @@
 {% extends 'base.html' %}
 {% block title %}Project - Sachin Rawat{% endblock %}
+{% block content %}
 {% for project in projects %}
 <div class="card mb-4">
     <img src="{{ project.image.url }}" class="card-img-top" alt="{{ project.title }}">
@@ -13,3 +14,4 @@
     </div>
 </div>
 {% endfor %}
+{%endblock%}
