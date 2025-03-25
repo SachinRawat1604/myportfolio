@@ -1,13 +1,7 @@
 from django.shortcuts import render
 
 def home(request):
-    return render(request, 'base.html')
-
-def about(request):
-    return render(request, 'about.html')
-
-def skills(request):
-    return render(request, 'skills.html')
+    return render(request, 'base.html')  # This now includes About, Education, Skills
 
 def projects(request):
     return render(request, 'projects.html')
@@ -15,11 +9,9 @@ def projects(request):
 def experience(request):
     return render(request, 'experience.html')
 
-def education(request):
-    return render(request, 'education.html')
-
 def certifications(request):
     return render(request, 'certifications.html')
+
 
 def contact(request):
     if request.method == 'POST':

@@ -1,3 +1,4 @@
+<!-- base.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -46,6 +47,9 @@
         .hero a {
             margin: 0.3rem;
         }
+        .section {
+            padding: 4rem 0;
+        }
     </style>
 </head>
 <body>
@@ -57,11 +61,11 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="/about/">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/skills/">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
                     <li class="nav-item"><a class="nav-link" href="/projects/">Projects</a></li>
                     <li class="nav-item"><a class="nav-link" href="/experience/">Experience</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/education/">Education</a></li>
                     <li class="nav-item"><a class="nav-link" href="/certifications/">Certifications</a></li>
                     <li class="nav-item"><a class="nav-link" href="/contact/">Contact</a></li>
                 </ul>
@@ -72,15 +76,38 @@
     <main class="container py-5">
         {% block content %}
         <section class="hero">
-            <img src="/static/images/resume_photo.jpg" alt="Sachin Rawat">
+            <img src="https://avatars.githubusercontent.com/u/placeholder" alt="Sachin Rawat">
             <h1>Hi, I'm Sachin Rawat</h1>
-            <p>Software Developer | Aspiring Data Scientist | AI & ML Enthusiast</p>
+            <p>Aspiring Data Scientist | AI & ML Enthusiast</p>
             <div>
                 <a href="/static/Sachin_Rawat_Resume.pdf" class="btn btn-dark" download>Download Resume</a>
                 <a href="/contact/" class="btn btn-outline-dark">Contact Me</a>
-                <a href="https://github.com/SachinRawat1604" class="btn btn-outline-secondary" target="_blank">GitHub</a>
-                <a href="www.linkedin.com/in/sachin-rawat-sr1604" class="btn btn-outline-secondary" target="_blank">LinkedIn</a>
+                <a href="https://github.com/yourgithub" class="btn btn-outline-secondary" target="_blank">GitHub</a>
+                <a href="https://linkedin.com/in/yourlinkedin" class="btn btn-outline-secondary" target="_blank">LinkedIn</a>
             </div>
+        </section>
+
+        <section id="about" class="section">
+            <h2>About Me</h2>
+            <p>Hello! I'm Sachin Rawat, an aspiring data scientist currently pursuing my B.Tech in Computer Science & Engineering from Uttaranchal Institute of Technology. I have a strong passion for AI, Machine Learning, and turning raw data into meaningful insights.</p>
+            <p><strong>Location:</strong> Dehradun, India | <strong>Graduation:</strong> June 2025</p>
+        </section>
+
+        <section id="education" class="section">
+            <h2>Education</h2>
+            <h5>B.Tech in Computer Science & Engineering</h5>
+            <p>Uttaranchal Institute of Technology — <em>Expected Graduation: June 2025</em></p>
+        </section>
+
+        <section id="skills" class="section">
+            <h2>Technical Skills</h2>
+            <ul>
+                <li><strong>Data Analysis:</strong> Python, Pandas, NumPy, Matplotlib, Seaborn, Power BI, Excel</li>
+                <li><strong>Programming:</strong> Python, SQL, C/C++</li>
+                <li><strong>Frameworks:</strong> Django, Streamlit</li>
+                <li><strong>Tools:</strong> Git, MySQL, VS Code, Anaconda</li>
+                <li><strong>Core Competencies:</strong> Statistical Analysis, Data Visualization, Machine Learning, ETL, Database Management</li>
+            </ul>
         </section>
         {% endblock %}
     </main>
