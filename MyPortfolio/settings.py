@@ -28,7 +28,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS', '127.0.0.1').split(',')
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['myportfolio-8jcb.onrender.com']
 
 
 # Application definition
