@@ -3,6 +3,9 @@ from django.shortcuts import render
 def home(request):
     return render(request, 'base.html')  # This now includes About, Education, Skills
 
+def about(request):
+    return render(request, 'about.html')
+
 def projects(request):
     return render(request, 'projects.html')
 
