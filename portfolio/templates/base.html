@@ -72,11 +72,11 @@
     <main class="container py-5">
         {% block content %}
         <section class="hero">
-            <img src="{%static'images/resume_photo.jpg'%}" alt="Sachin Rawat">
+            <img src="{% static'images/resume_photo.jpg' %}" alt="Sachin Rawat">
             <h1>Hi, I'm Sachin Rawat</h1>
             <p>Software Developer | Aspiring Data Scientist | AI & ML Enthusiast</p>
             <div>
-                <a href="{%static'Resume/Sachin_Rawat_Resume.docx'%}" class="btn btn-dark" download>Download Resume</a>
+                <a href="{% static'Resume/Sachin_Rawat_Resume.docx' %}" class="btn btn-dark" download>Download Resume</a>
                 <a href="/contact/" class="btn btn-outline-dark">Contact Me</a>
                 <a href="https://github.com/SachinRawat1604" class="btn btn-outline-secondary" target="_blank">GitHub</a>
                 <a href="https://www.linkedin.com/in/sachin-rawat-sr1604" class="btn btn-outline-secondary" target="_blank">LinkedIn</a>
