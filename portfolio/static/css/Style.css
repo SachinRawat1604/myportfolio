@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 40px 20px;
+  }
+  
+  /* Header */
+  header {
+    background-color: #111;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  header h1 {
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+  }
+  
+  /* Tab Buttons */
+  .btn {
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: 2px solid #0d6efd;
+    background-color: transparent;
+    color: #0d6efd;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .btn:hover,
+  .btn.active {
+    background-color: #0d6efd;
+    color: white;
+  }
+  
+  /* Section Styling */
+  .tab-section {
+    padding: 30px 0;
+    animation: fade 0.3s ease-in-out;
+  }
+  
+  @keyframes fade {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  .tab-section h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 2rem;
+    color: #0d6efd;
+  }
+  
+  /* About Me */
+  .tab-section img {
+    max-width: 200px;
+    border-radius: 50%;
+    border: 3px solid #0d6efd;
+  }
+  
+  /* Timeline (Education) */
+  .timeline {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .timeline li {
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-left: 1.5rem;
+  }
+  
+  .timeline li::before {
+    content: "●";
+    position: absolute;
+    left: 0;
+    color: #0d6efd;
+  }
+  
+  /* Skills */
+  .badge {
+    font-size: 1rem;
+    padding: 10px 15px;
+    margin: 5px;
+    display: inline-block;
+    border-radius: 20px;
+  }
+  
+  .bg-dark {
+    background-color: #333;
+    color: white;
+  }
+  
+  .bg-secondary {
+    background-color: #6c757d;
+    color: white;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .tab-section .row {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .btn {
+      margin-bottom: 10px;
+    }
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    font-size: 0.9rem;
+  }

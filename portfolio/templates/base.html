@@ -7,73 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}Sachin Rawat | Portfolio{% endblock %}</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        html, body {
-            height: 100%;
-            margin: 0;
-        }
-        body {
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-            font-family: 'Segoe UI', sans-serif;
-            background-color: #f8f9fa;
-            color: #333;
-        }
-        .navbar {
-            background-color: #ffffff;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-        }
-        .nav-link {
-            color: #333 !important;
-        }
-        footer {
-            background-color: #111;
-            color: white;
-            font-size: 0.9rem;
-            padding: 1rem 0;
-            background: #f1f1f1;
-            text-align: center;
-        }
-        .hero {
-            text-align: center;
-            padding: 4rem 1rem;
-        }
-        .hero img {
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
-            border-radius: 50%;
-            margin-bottom: 1rem;
-        }
-        .hero h1 {
-            font-size: 2.5rem;
-            font-weight: bold;
-        }
-        .hero p {
-            font-size: 1.2rem;
-            margin-bottom: 1.5rem;
-        }
-        .hero a {
-            margin: 0.3rem;
-        }
-        .timeline {
-            list-style: none;
-            padding-left: 0;
-        }
-        .timeline li {
-            margin-bottom: 1.5rem;
-            position: relative;
-            padding-left: 1.5rem;
-        }
-        .timeline li::before {
-            content: "●";
-            position: absolute;
-            left: 0;
-            color: #0d6efd;
-        }
-        
-    </style>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg">
@@ -110,7 +44,7 @@
         {% endblock %}
     </main>
 
-    <footer>
+    <footer class="bg-dark text-white text-center py-3 mt-auto border-top border-secondary">
         &copy; 2025 Sachin Rawat. All rights reserved.
     </footer>
 
