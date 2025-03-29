@@ -3,7 +3,7 @@ from django.core.mail import send_mail
 from django.shortcuts import render
 from django.conf import settings
 from decouple import config
-from .models import Project
+from .models import Project, Certification
 
 def home(request):
     return render(request, 'base.html') 

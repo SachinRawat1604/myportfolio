@@ -54,7 +54,7 @@ MIDDLEWARE = [
     'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
-ROOT_URLCONF = 'MyPortfolio.urls'
+ROOT_URLCONF = 'myportfolio.urls'
 
 TEMPLATES = [
     {
@@ -72,7 +72,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'MyPortfolio.wsgi.application'
+WSGI_APPLICATION = 'myportfolio.wsgi.application'
 
 
 # Database
