@@ -58,13 +58,23 @@
 </div>
 
 <!-- JavaScript to switch tabs -->
+
 <script>
     function showSection(id) {
         const sections = document.querySelectorAll('.tab-section');
-        sections.forEach(section => {
-            section.style.display = 'none';
-        });
+        sections.forEach(section => section.style.display = 'none');
         document.getElementById(id).style.display = 'block';
+        
+        // Active button styling
+        const buttons = document.querySelectorAll('.btn-outline-primary');
+        buttons.forEach(btn => btn.classList.remove('active'));
+        event.target.classList.add('active');
     }
+
+    // Show default tab on load
+    document.addEventListener('DOMContentLoaded', () => {
+        showSection('about');
+    });
 </script>
+
 {% endblock %}
