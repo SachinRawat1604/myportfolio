@@ -3,6 +3,7 @@ from django.core.mail import send_mail
 from django.shortcuts import render
 from django.conf import settings
 from decouple import config
+from .models import Project
 
 def home(request):
     return render(request, 'base.html') 
@@ -10,7 +11,8 @@ def about(request):
     return render(request, 'about.html')
 
 def projects(request):
-    return render(request, 'projects.html')
+    projects = Project.objects.all()
+    return render(request, 'projects.html', {'projects': projects})
 
 def experience(request):
     return render(request, 'experience.html')
