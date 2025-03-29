@@ -48,6 +48,21 @@
         .hero a {
             margin: 0.3rem;
         }
+        .timeline {
+            list-style: none;
+            padding-left: 0;
+        }
+        .timeline li {
+            margin-bottom: 1.5rem;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+        .timeline li::before {
+            content: "●";
+            position: absolute;
+            left: 0;
+            color: #0d6efd;
+        }
     </style>
 </head>
 <body>

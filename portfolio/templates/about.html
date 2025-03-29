@@ -1,26 +1,70 @@
 {% extends 'base.html' %}
-{% block title %}About - Sachin Rawat{% endblock %}
+{% load static %}
+
+{% block title %}About | Sachin Rawat{% endblock %}
+
 {% block content %}
-<section class="section">
-    <h2>About Me</h2>
-    <p>Hello! I'm Sachin Rawat, an aspiring data scientist currently pursuing my B.Tech in Computer Science & Engineering from Uttaranchal Institute of Technology. I have a strong passion for AI, Machine Learning, and turning raw data into meaningful insights.</p>
-    <p><strong>Location:</strong> Dehradun, India | <strong>Graduation:</strong> June 2025</p>
-</section>
+<div class="container py-5">
 
-<section class="section">
-    <h2>Education</h2>
-    <h5>B.Tech in Computer Science & Engineering</h5>
-    <p>Uttaranchal Institute of Technology — <em>Expected Graduation: June 2025</em></p>
-</section>
+    <!-- Tab Buttons -->
+    <div class="text-center mb-4">
+        <button class="btn btn-outline-primary mx-2" onclick="showSection('about')">About Me</button>
+        <button class="btn btn-outline-primary mx-2" onclick="showSection('education')">Education</button>
+        <button class="btn btn-outline-primary mx-2" onclick="showSection('skills')">Skills</button>
+    </div>
 
-<section class="section">
-    <h2>Technical Skills</h2>
-    <ul>
-        <li><strong>Data Analysis:</strong> Python, Pandas, NumPy, Matplotlib, Seaborn, Power BI, Excel</li>
-        <li><strong>Programming:</strong> Python, SQL, C/C++</li>
-        <li><strong>Frameworks:</strong> Django, Streamlit</li>
-        <li><strong>Tools:</strong> Git, MySQL, VS Code, Anaconda</li>
-        <li><strong>Core Competencies:</strong> Statistical Analysis, Data Visualization, Machine Learning, ETL, Database Management</li>
-    </ul>
-</section>
+    <!-- About Me Section -->
+    <section id="about" class="tab-section">
+        <h2 class="text-center mb-4">About Me</h2>
+        <div class="row align-items-center">
+            <div class="col-md-4 text-center">
+                <img src="{% static 'images/resume_photo.jpg' %}" class="img-fluid rounded-circle mb-3" style="max-width: 200px;" alt="Sachin Rawat">
+            </div>
+            <div class="col-md-8">
+                <p>Hello! I'm Sachin Rawat, a B.Tech CSE student passionate about AI, ML, and Full Stack Web Development.</p>
+                <p>I love solving problems, building projects, and working with modern tools like Django, Python, and Pandas.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="tab-section" style="display: none;">
+        <h2 class="text-center mb-4">Education</h2>
+        <ul class="timeline">
+            <li>
+                <h5>B.Tech in CSE</h5>
+                <p>Uttaranchal Institute of Technology, 2021–2025</p>
+            </li>
+            <li>
+                <h5>Senior Secondary (XII)</h5>
+                <p>CBSE Board, Science Stream</p>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="tab-section" style="display: none;">
+        <h2 class="text-center mb-4">Skills</h2>
+        <div class="row text-center">
+            <div class="col-md-4 mb-3"><span class="badge bg-dark p-2">Python</span></div>
+            <div class="col-md-4 mb-3"><span class="badge bg-secondary p-2">Django</span></div>
+            <div class="col-md-4 mb-3"><span class="badge bg-dark p-2">Pandas</span></div>
+            <div class="col-md-4 mb-3"><span class="badge bg-secondary p-2">Streamlit</span></div>
+            <div class="col-md-4 mb-3"><span class="badge bg-dark p-2">SQL</span></div>
+            <div class="col-md-4 mb-3"><span class="badge bg-secondary p-2">Power BI</span></div>
+        </div>
+    </section>
+
+</div>
+
+<!-- JavaScript to switch tabs -->
+<script>
+    function showSection(id) {
+        const sections = document.querySelectorAll('.tab-section');
+        sections.forEach(section => {
+            section.style.display = 'none';
+        });
+        document.getElementById(id).style.display = 'block';
+    }
+</script>
 {% endblock %}
