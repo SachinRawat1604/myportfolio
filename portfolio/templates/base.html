@@ -8,7 +8,14 @@
     <title>{% block title %}Sachin Rawat | Portfolio{% endblock %}</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
         body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
             font-family: 'Segoe UI', sans-serif;
             background-color: #f8f9fa;
             color: #333;
@@ -21,6 +28,8 @@
             color: #333 !important;
         }
         footer {
+            background-color: #111;
+            color: white;
             font-size: 0.9rem;
             padding: 1rem 0;
             background: #f1f1f1;
@@ -63,6 +72,7 @@
             left: 0;
             color: #0d6efd;
         }
+        
     </style>
 </head>
 <body>
