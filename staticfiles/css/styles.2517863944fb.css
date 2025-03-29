@@ -70,7 +70,7 @@ footer {
 }
 
 /* Responsive Tweaks */
-@media (max-width: 200px) {
+@media (max-width: 768px) {
     .profile-img {
         width: 150px;
         height: 150px;

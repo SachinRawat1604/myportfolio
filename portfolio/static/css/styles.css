@@ -1,0 +1,329 @@
+/* Reset some basic styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #111;
+    padding: 1rem 0;
+}
+
+.navbar-brand {
+    color: #fff !important;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.navbar-nav .nav-link {
+    color: #ddd !important;
+    margin-left: 20px;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #fff !important;
+}
+
+/* Hero Section */
+.hero {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.profile-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #343a40;
+    margin-bottom: 20px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.hero h1 {
+    font-size: 2.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+}
+
+/* Buttons */
+.hero .btn {
+    margin: 0.3rem;
+}
+
+/* Footer */
+footer {
+    background-color: #111;
+    color: #fff;
+    font-size: 0.95rem;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 768px) {
+    .profile-img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+}
+
+/* Section Headings */
+.tab-section h2 {
+    font-weight: 600;
+    color: #343a40;
+}
+
+/* Tab Buttons */
+.btn-outline-primary {
+    border-radius: 30px;
+    padding: 0.5rem 1.2rem;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary.active {
+    background-color: #0d6efd;
+    color: white;
+    box-shadow: 0 4px 12px rgba(13, 110, 253, 0.3);
+}
+
+/* Skills Badges */
+.badge {
+    font-size: 1rem;
+    border-radius: 20px;
+    padding: 0.6em 1.2em;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Timeline for Education */
+.timeline {
+    list-style: none;
+    padding: 0;
+    position: relative;
+    border-left: 3px solid #0d6efd;
+    margin-left: 20px;
+}
+
+.timeline li {
+    margin-bottom: 2rem;
+    position: relative;
+    padding-left: 20px;
+}
+
+.timeline li::before {
+    content: "";
+    position: absolute;
+    left: -11px;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    background-color: #0d6efd;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.2);
+}
+
+/* Responsive Fixes */
+@media (max-width: 768px) {
+    .timeline {
+        margin-left: 15px;
+    }
+
+    .timeline li {
+        padding-left: 15px;
+    }
+}
+
+/* Certifications Section */
+section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+section h2 {
+    font-size: 1.75rem;
+    color: #0d6efd;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #dee2e6;
+    padding-bottom: 0.5rem;
+}
+
+section ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+section ul li {
+    background-color: #f8f9fa;
+    margin-bottom: 0.75rem;
+    padding: 0.75rem 1rem;
+    border-left: 4px solid #0d6efd;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+section ul li:hover {
+    background-color: #e9ecef;
+}
+
+/* Contact Section */
+section {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+section h2 {
+    font-size: 2rem;
+    color: #0d6efd;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    border-bottom: 2px solid #dee2e6;
+    padding-bottom: 0.5rem;
+}
+
+form .form-label {
+    font-weight: 500;
+}
+
+form .form-control {
+    border-radius: 0.5rem;
+    box-shadow: none;
+    border: 1px solid #ced4da;
+    transition: border-color 0.3s ease-in-out;
+}
+
+form .form-control:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+
+form button[type="submit"] {
+    border-radius: 0.5rem;
+    padding: 0.5rem 1.5rem;
+    font-weight: 500;
+    transition: background-color 0.3s ease-in-out;
+}
+
+form button[type="submit"]:hover {
+    background-color: #0b5ed7;
+}
+
+.alert-success {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+
+/* Experience Section */
+section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+section h2 {
+    font-size: 2rem;
+    text-align: center;
+    color: #0d6efd;
+    border-bottom: 2px solid #dee2e6;
+    padding-bottom: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+section h4 {
+    color: #343a40;
+    font-weight: 600;
+    margin-top: 1.5rem;
+}
+
+section p {
+    font-size: 1rem;
+    color: #6c757d;
+    margin-bottom: 1rem;
+}
+
+section ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+}
+
+section ul li {
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+}
+
+section p strong {
+    display: inline-block;
+    color: #495057;
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+}
+
+
+/* Project Cards */
+.card {
+    border: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+.card-body h5 {
+    font-size: 1.5rem;
+    color: #0d6efd;
+    margin-bottom: 0.75rem;
+}
+
+.card-body p {
+    font-size: 1rem;
+    color: #495057;
+    margin-bottom: 0.5rem;
+}
+
+.card-body a.btn {
+    margin-top: 0.75rem;
+}
+
+body {
+    background-color: #f8f9fa;
+}
