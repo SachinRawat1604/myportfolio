@@ -1,0 +1,3 @@
+# Don't track secret config files
+.env
+settings.py
